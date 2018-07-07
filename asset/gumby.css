@@ -9983,9 +9983,6 @@ p.side-image {
   line-height: 1;
 }
 
-.marlin-product-landing-page #contact {
-  margin-top: 100px !important;
-}
 
 .marlin-product-landing-page .drawer.active {
   min-height: auto;
@@ -12306,4 +12303,100 @@ margin-right: 0px !important;
       width: 134% !important
       margin-left: -227px !important;
   }
+}
+@media only screen and (max-width: 480px){
+  #vdo {
+      margin-top: -60% !important;
+  }
+  .benefits__heading {
+    font-size: 18px !important;
+    color: #0040B1;
+    line-height: 24px !important;
+    margin-bottom: 10px;
+    min-height: 130px !important;
+    font-weight: 600 !important;
+}
+#mcd
+{
+min-height: 75px !important;
+}
+ol {
+    list-style: decimal;
+    margin-left: 0px !important;
+
+}
+ol p
+{
+    text-align: justify !important;
+}
+p
+{
+  text-align: justify !important;
+}
+.textwidget p
+{
+  text-align: center !important;
+}
+#bs-example-navbar-collapse-1
+{
+      overflow-x: hidden;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 450px !important;
+}
+#lft, #rgt
+{
+  display: none;
+}
+}
+#tv
+{
+  background: #d0d8da;
+  padding: 50px 0px 0px 0px;
+}
+.tvcenter
+{
+  position: absolute;
+    z-index: 55;
+    left: 25%;
+    margin-top: -40%;
+}
+#tv
+{
+  display:none;
+}
+#vdo
+{
+      margin-top: -58%;
+}
+#vdo iframe
+{
+  width: 785px;
+height: 445px;
+}
+.tvimg
+{
+  width: 875px;
+}
+#contact {
+    margin-top: 50px;
+}
+figcaption
+{
+    color: #0264d0;
+    text-decoration: none;
+    outline: 0;
+    line-height: inherit;
+}
+#lft
+{
+  left:-25%;
+}
+#rgt
+{
+  right:-20%;
+}
+#lft span, #rgt span
+{
+  font-size: 50px;
 }

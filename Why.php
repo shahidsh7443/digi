@@ -6,9 +6,9 @@
 	    <title>DigiDarpan DigitalSignage Solutions</title>
 	    <meta name="Digital Signage" content="Digital Signage Solutions designed for the Workplace by Razorbee Online Solutions Pvt Ltd">
 	    <meta name="Digital Signage" content="">
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="bootstrap.min.css">
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		  <script src="bootstrap.min.js"></script>
 		<!-- Facebook Metadata /-->
 				<link rel="stylesheet" href="css/templatemo-style.css">
 		  <link rel="shortcut icon" href="img/favicon.ico">

@@ -7,13 +7,13 @@
 	    <meta name="Digital Signage" content="Digital Signage Solutions designed for the Workplace by Razorbee Online Solutions Pvt Ltd">
 	    <meta name="Digital Signage" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="bootstrap.min.css">
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		  <script src="bootstrap.min.js"></script>
 		<!-- Facebook Metadata /-->
 				<link rel="stylesheet" href="css/templatemo-style.css">
 		  <link rel="shortcut icon" href="img/favicon.ico">
-
+<link rel="stylesheet" href="ani/animations.css" type="text/css">
   <link rel="stylesheet" href="asset/gumby.css">
   <script src="./asset/modernizr-2.6.2.min.js.download"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -56,6 +56,15 @@ $(function(){
 			 $(".navbar-collapse").collapse('hide');
 		 });
 	 });
+	 $(document).ready(function() {
+		 if($(window).width()<480)
+		 {
+		 var wwidth=$(window).width();
+		 $('.tvimg').css({'width':wwidth-30});
+		 $('#vdo iframe').css({'width':wwidth-60});
+     var wheight=$('.tvimg').height();
+		 $('#vdo iframe').css({'height':wheight-30});
+	 } });
 </script>
 	<!-- <script>
  function closeFunction()
@@ -71,20 +80,20 @@ $(function(){
 <nav class="navbar navbar-default templatemo-nav navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
-					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"  >
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon icon-bar"></span>
 						<span class="icon icon-bar"></span>
 						<span class="icon icon-bar"></span>
 					</button>
-					<a href="#" class="navbar-brand">  <a href="#" title="Digital Signage by Razorbee Online Solutions Pvt Ltd">
-	            <img class="logo" alt="DigitalSignage/DigiDarpan" src="img/DG1.png" >
-	          </a></a>
+					<a href="#" class="navbar-brand">  </a><a href="#" title="Digital Signage by Razorbee Online Solutions Pvt Ltd">
+	            <img class="logo" alt="DigitalSignage/DigiDarpan" src="img/DG1.png">
+	          </a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right" style="margin-right:-175px;">
 						<li class="scroll active"><a href="#top">HOME</a></li>
-						<li class="scroll"><a href="#Why_DigiDarpan" >Why DigiDarpan</a></li>
-						<li class="scroll"><a href="#contact" >CONTACT</a></li>
+						<li class="scroll"><a href="#Why_DigiDarpan">Why DigiDarpan</a></li>
+						<li class="scroll"><a href="#contact">CONTACT</a></li>
 						<li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
         <span class="caret"></span></a>
@@ -553,7 +562,10 @@ body{
       max-width: 1130px;
       margin: 0 auto;
     }
-
+   .benefits__body
+	 {
+	 	text-align: justify !important;
+	 }
     @media(min-width: 768px) {
       .benefits__container {
         display: flex;
@@ -579,7 +591,7 @@ body{
       color: #0040B1;
       line-height: 32px;
       margin-bottom: 10px;
-      min-height: 139px;
+      min-height: 110px;
     }
 	.benefits__heading1{
       font-size: 20px;
@@ -611,7 +623,7 @@ body{
     }
 
     .benefits__body {
-      margin-bottom: 20px;
+      margin-bottom: 0px !important;
       flex: 1 0 auto;
     }
 
@@ -626,7 +638,7 @@ body{
 
     .benefits__img {
       margin-bottom: 20px;
-      width: 400px;
+      width: 365px;
       height: auto;
       margin: 0 auto 20px auto;
     }
@@ -641,6 +653,11 @@ body{
       margin-bottom: 40px;
       display: flex;
       flex-direction: column;
+			background: #f7f9f8;
+    min-height: 480px;
+    padding-left: 25px;
+    padding-right: 25px;
+		    box-shadow: 5px 7px 10px rgba(0,0,0,0.5);
     }
 
     @media(min-width: 1100px) {
@@ -875,44 +892,43 @@ body{
 	  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
 	    <ol class="carousel-indicators ci">
-	      <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 	      <li data-target="#myCarousel" data-slide-to="1"></li>
 	      <li data-target="#myCarousel" data-slide-to="2"></li>
 	    </ol>
 
 
 	    <div class="carousel-inner cin">
-
 	      <div class="item active">
-	          <img src="img/DigitalSignage2.jpg" alt="Los Angeles" class="img1" >
-	        <div class="carousel-caption cc1" >
-	          <h5>Digital Signage in Restaurant</h3>
+	          <img src="img/DigitalSignage2.jpg" alt="Los Angeles" class="img1">
+	        <div class="carousel-caption cc1">
+	          <h5>Digital Signage in Restaurant</h5>
 
 	        </div>
 	      </div>
 
 	      <div class="item">
 	       <img src="img/DGres.jpg" alt="Los Angeles" class="img2">
-	        <div class="carousel-caption cc1" >
-	          <h5>Digital Signage in Food-Zones.</h3>
+	        <div class="carousel-caption cc1">
+	          <h5>Digital Signage in Food-Zones.</h5>
 	        </div>
 	      </div>
 
 	      <div class="item">
 	        <img src="img/HospitalDG.jpg" alt="Los Angeles" class="img3">
-	        <div class="carousel-caption cc1" >
-	          <h5>Digital Signage in Hospitals</h3>
+	        <div class="carousel-caption cc1">
+	          <h5>Digital Signage in Hospitals</h5>
 	        </div>
 	      </div>
 
 	    </div>
 
-	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-right cr"></span>
+	    <a class="left carousel-control" id="lft" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left cr"></span>
 	      <span class="sr-only">Next</span>
 	    </a>
-	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-	      <span class="glyphicon glyphicon-chevron-left cl"></span>
+	    <a class="right carousel-control" id="rgt" href="#myCarousel" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right cl"></span>
 	      <span class="sr-only">Previous</span>
 	    </a>
 	  </div>
@@ -1036,7 +1052,7 @@ pointer-events: none;
 		<div class="row" style="padding-top:40px;">
 			<h3 class="hidden-lg hidden-sm hidden-xs text-centre" style="font-size: 2.875rem">Why <strong>DigiDarpan?</strong></h3>
 		<div class="col-lg-4 col-md-12">
-		<h3 class="hidden-md" >Why <strong>DigiDarpan?</strong></h3>
+		<h3 class="hidden-md">Why <strong>DigiDarpan?</strong></h3>
 		<ol>
 		<p style="font-size:16px;text-align:left;padding-left:5px; padding-top:0px;" class="why">
 			DigiDarpan is a complete digital signage solution.No matter which market you’re in, DigiDarpan is a powerful solution,used to increase brand awareness and build customer loyalty through eye-caching visual display experience.
@@ -1050,9 +1066,12 @@ With integrated, end-to-end digital signage solution for customer, DigiDarpan is
 <p style="font-size:16px;text-align:left;padding-left:5px;">
 Razorbee’s  Digital signage solution is leading the way to tell your messages and brand  from  medium to new levels.
 </p>
+</ol></div>
+<div class="col-lg-8 col-md-12 animatedParent">
+<img src="tv/tv8.png" class="tvimg">
+<div class="animatedParent" id="vdo">
+<iframe class="animated fadeIn slower delay-300" width="560" height="315" src="https://www.youtube.com/embed/8qFAcfDTc88" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
-<div class="col-lg-8 col-md-12">
-<img src="img/dh1.jpg" class="img-rounded darpan1" style="background-size:cover; !important;background-repeat:no-repeat !important;width:100%;margin-top: 55px;">
 </div>
 </div>
 <div class="row hidden-xs hidden-sm hidden-md">
@@ -1103,15 +1122,15 @@ Razorbee’s  Digital signage solution is leading the way to tell your messages 
 </div>
 		</section>
   <section class="benefits">
-  <h3 class="text-center" style="margin-top:40px;margin-bottom:20px;" >The Benefits of Digital Signage</h3>
-  <div class="row" style="margin-left:-1.5%;">
+  <h3 class="text-center" style="margin-top:40px;margin-bottom:20px;">The Benefits of Digital Signage</h3>
+  <div class="row" style="margin-left:0%;">
 	<div class="col-md-4">
     	<article class="benefits__item">
           <div class="benefits__itemContainer">
       			<img class="benefits__img img-rounded" src="img/Runtime.jpg" alt="DigitalSignage/DigiDarpan Features" title="Digital Signage by Razorbee Online Solutions Pvt Ltd Features">
       	    <div class="benefits__copy">
-      	      <h3 class="benefits__heading">Minimizes perceived wait time..</h3>
-      	      <p style="font-size:16px;text-align:left;margin-top:-40px;margin-left:20px;" class="benefits__body bb">One of the best things you can do to improve customer experience is to keep them entertained. A digital screen gives them something to do-it’s a lot less annoying to wait in line if you’ve got something to watch. As a result, perceived wait time drops.</p>
+      	      <h3 class="benefits__heading" id="mcd">Minimizes perceived wait time..</h3>
+      	      <p style="font-size:16px;text-align:left;margin-top:-40px;" class="benefits__body bb">One of the best things you can do to improve customer experience is to keep them entertained. A digital screen gives them something to do-it’s a lot less annoying to wait in line if you’ve got something to watch. As a result, perceived wait time drops.</p>
 
 
       	    </div>
@@ -1124,7 +1143,7 @@ Razorbee’s  Digital signage solution is leading the way to tell your messages 
       			<img class="benefits__img img-rounded" src="img/TimeDigitalSignage.jpg" alt="DigitalSignage/DigiDarpan Features" title="Digital Signage by Razorbee Online Solutions Pvt Ltd Features">
       	    <div class="benefits__copy">
       	      <h3 class="benefits__heading">You can run relevant ads depending on the time of day or day of the week.</h3>
-      	      <p style="font-size:16px;text-align:left; margin-top:-40px; margin-left:20px;" class="benefits__body">Breakfast ads during breakfast if you’re a restaurant franchise, for example. Alternatively, if you have a retail clothing franchise, you might run ads featuring rain gear on rainy days and sunglasses on sunny ones.</p>
+      	      <p style="font-size:16px;text-align:left; margin-top:-40px;" class="benefits__body">Breakfast ads during breakfast if you’re a restaurant franchise, for example. Alternatively, if you have a retail clothing franchise, you might run ads featuring rain gear on rainy days and sunglasses on sunny ones.</p>
 
 
       	    </div>
@@ -1137,7 +1156,7 @@ Razorbee’s  Digital signage solution is leading the way to tell your messages 
       			<img class="benefits__img img-rounded" src="img/DigitalSignage5.jpg" alt="DigitalSignage/DigiDarpan Features" title="Digital Signage by Razorbee Online Solutions Pvt Ltd Features">
       	    <div class="benefits__copy ">
       	      <h5 class="benefits__heading">Promoting hospital services,Employee coordination and communication</h5>
-      	      <p style="font-size:16px;text-align:left;margin-top:-40px; margin-left:20px;" class="benefits__body">With a display network at the hands of every patient, visitor or medical attendant, it is a lot easier to inform them about the services offered in your organization, in particular when you can match the message to the location.</p>
+      	      <p style="font-size:16px;text-align:left;margin-top:-40px;" class="benefits__body">With a display network at the hands of every patient, visitor or medical attendant, it is a lot easier to inform them about the services offered in your organization, in particular when you can match the message to the location.</p>
 
 
       	    </div>
@@ -1220,28 +1239,28 @@ Razorbee’s  Digital signage solution is leading the way to tell your messages 
 
 		      <div class="solution-statements">
 		        <figure>
-		          <a href="#"><img src="./asset/marlin-quick-start-icon-morale.svg" height="100px" width="150px" alt="Enterprise Digital Signage Solutions"></a>
+		          <img src="./asset/marlin-quick-start-icon-morale.svg" height="100px" width="150px" alt="Enterprise Digital Signage Solutions">
 		        </figure>
 		        <figcaption>
-		            <a href="#"><h4 data-mh="headings" style="height: 57px;">Boost Engagement and Morale</h4></a>
+		            <h4 data-mh="headings" style="height: 57px;">Boost Engagement and Morale</h4>
 		        </figcaption>
 		      </div>
 
 		      <div class="solution-statements">
 		        <figure>
-		          <a href="#"><img src="./asset/marlin-quick-start-icon-productivity.svg" height="100px" width="150px" alt="Enterprise Digital Signage Solutions"></a>
+		          <img src="./asset/marlin-quick-start-icon-productivity.svg" height="100px" width="150px" alt="Enterprise Digital Signage Solutions">
 		        </figure>
 		        <figcaption>
-		         <a href="#"><h4 data-mh="headings" style="height: 57px;">Increase Employee Productivity</h4></a>
+		       <h4 data-mh="headings" style="height: 57px;">Increase Employee Productivity</h4>
 		        </figcaption>
 		      </div>
 
 		      <div class="solution-statements">
 		        <figure>
-		          <a href="#"><img src="./asset/marlin-quick-start-icon-safety.svg" height="100px" width="150px" alt="Enterprise Digital Signage Solutions"></a>
+		          <img src="./asset/marlin-quick-start-icon-safety.svg" height="100px" width="150px" alt="Enterprise Digital Signage Solutions">
 		        </figure>
 		        <figcaption>
-		         <a href="#"><h4 data-mh="headings" style="height: 57px;">Improve Workplace Safety</h4></a>
+		       <h4 data-mh="headings" style="height: 57px;">Improve Workplace Safety</h4>
 		        </figcaption>
 		      </div>
 		    </div>
@@ -1251,7 +1270,7 @@ Razorbee’s  Digital signage solution is leading the way to tell your messages 
 
 
 
-	<article class="happy-customers hidden-xs hidden-sm"  style="background-color: #F5F6F9 !important;">
+	<article class="happy-customers hidden-xs hidden-sm" style="background-color: #F5F6F9 !important;">
 		<h2>Our Satisfied Clients</h2>
 	    <p>Check out the companies we have transformed below or contact us to learn more.</p>
 	    <div class="row hidden-md">
@@ -1296,7 +1315,7 @@ Razorbee’s  Digital signage solution is leading the way to tell your messages 
 <img src="img/happywandered.png" alt="Safeway" style="height: 80px ;width: 175px;">
 </div>
 </div>
-</article><article class="happy-customers hidden-lg hidden-md visible-xs"  style="background-color: #F5F6F9 !important;">
+</article><article class="happy-customers hidden-lg hidden-md visible-xs" style="background-color: #F5F6F9 !important;">
 			<h2>Still not convinced?</h2>
 		    <p>Check out the companies we have transformed below or contact us to learn more.</p>
 		<section class="section-white">
@@ -1346,6 +1365,24 @@ Razorbee’s  Digital signage solution is leading the way to tell your messages 
 
   </div>
 </section></article>
+
+<section id="tv" class="vid">
+	<h3 class="text-center">Demo Video</h3>
+	<svg class="endsection-svg" width="1665px" height="564px" viewBox="0 0 1665 564" preserveAspectRatio="none"><defs><linearGradient x1="-18.3420118%" y1="24.122224%" x2="111.65494%" y2="-8.2958821%" id="bottomGradient-1"><stop stop-color="#0041B1" offset="0%"></stop><stop stop-color="#7EDEFF" offset="100%"></stop></linearGradient><linearGradient x1="75.6285722%" y1="-10.2668883%" x2="11.5003613%" y2="90.401303%" id="bottomGradient-2"><stop stop-color="#E9F1FF" offset="0%"></stop><stop stop-color="#EEF9FE" offset="100%"></stop></linearGradient></defs><polygon fill="#F4F8FF" transform="translate(832.500000, 316.000000) scale(-1, -1) translate(-832.500000, -316.000000)" points="0 400 1665 400 1665 365.491263 117.611298 564 0 494.825616"></polygon><path fill="url(#bottomGradient-1)" d="M1665,542.558298 L1665,214.293036 L1436.72423,184.912911 L0,0 L0,607.21087 L0,532.463904 L1547.3887,334 L1665,403.158761 L1665,542.558298 Z"></path></svg>
+<div class="tvcenter text-center">
+<img src="tv/tv2.png" alt="tv" />
+<div class="animatedParent" id="vdo">
+<iframe class="animated fadeIn slower delay-300" width="560" height="315" src="https://www.youtube.com/embed/8qFAcfDTc88" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
 <div class="contact-panel" id="contact">
   <div class="contact-panel__header">
     <h2 class="contact-panel__title">
@@ -1355,11 +1392,11 @@ Razorbee’s  Digital signage solution is leading the way to tell your messages 
       Get in touch for a free demo!
     </p>
   </div>
-</br>
-</br>
+<br>
+<br>
 
   <div class="contact-panel__form">
-  <form id="b218decf73a7f23577eef1e5b53fbef88be92af368b5" method="post" action="http://digidarpan.com/" >
+  <form id="b218decf73a7f23577eef1e5b53fbef88be92af368b5" method="post" action="http://digidarpan.com/">
 <div class="hiddenFields">
 <input type="hidden" name="ACT" value="32">
 <input type="hidden" name="subUri" value="workplace-digital-signage-solution2">
@@ -1371,7 +1408,7 @@ Razorbee’s  Digital signage solution is leading the way to tell your messages 
 
     <input type="hidden" name="lead_source" value="web_contact_ppc">
     <input type="hidden" name="retURLOverride" value="">
-	<div class="row" >
+	<div class="row">
 		<div class="col-md-6">
 <h3 style="color:white;"><u><strong>About Us</strong></u></h3>
       	      <p style="font-size:20px;text-align:left;color:white;">
@@ -1425,3 +1462,7 @@ and providing successful solutions and services to IT sector.</p>
 </div>
   <!-- Grab Google CDN's jQuery, fall back to local if offline -->
   <!-- 2.0 for modern browsers, 1.10 for .oldie -->
+</form></div></div>
+<script src="ani/css3-animate-it.js"></script>
+</body>
+</html>
